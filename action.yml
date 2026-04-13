@@ -1,0 +1,28 @@
+name: 'Platform Status Check'
+description: 'Fetches the current status from a status page (e.g. status.pantheon.io) and reports the color indicator and description to the workflow run and job summary.'
+author: 'TotalOnion'
+
+branding:
+  icon: 'activity'
+  color: 'blue'
+
+inputs:
+  status_page_url:
+    description: 'Base URL of the Atlassian Statuspage to check (e.g. https://status.pantheon.io)'
+    required: true
+  fail_on:
+    description: 'Comma-separated list of indicators that should cause the action to fail (e.g. "major,critical"). Leave empty to never fail.'
+    required: false
+    default: ''
+
+outputs:
+  indicator:
+    description: 'Raw indicator value returned by the status page API (none | minor | major | critical | maintenance)'
+  color:
+    description: 'Human-friendly color for the indicator (green | yellow | orange | red | blue)'
+  status_description:
+    description: 'Human-readable status description returned by the status page'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
