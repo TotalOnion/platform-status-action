@@ -1,0 +1,19 @@
+{
+	"name": "platform-status-action",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "ncc build src/index.js -o dist",
+		"lint": "eslint . --ignore-pattern 'dist/, node_modules/'",
+		"format-check": "prettier --check .",
+		"format-write": "prettier --write ."
+	},
+	"dependencies": {
+		"@actions/core": "^1.11.1",
+		"eslint": "^9.39.4"
+	},
+	"devDependencies": {
+		"@vercel/ncc": "^0.38.1",
+		"prettier": "^3.8.2"
+	}
+}

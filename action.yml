@@ -1,0 +1,23 @@
+name: "Platform Status Check"
+description: "Fetch a platform status page and add the result to the logs and workflow summary"
+
+inputs:
+    platform:
+        description: "Platform to check"
+        required: true
+    fail-on-red:
+        description: "Fail the action when status is red"
+        required: false
+        default: "false"
+
+outputs:
+    color:
+        description: "Mapped color"
+    indicator:
+        description: "Raw indicator"
+    description:
+        description: "Human-readable status"
+
+runs:
+    using: "node20"
+    main: "dist/index.js"
