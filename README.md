@@ -7,6 +7,13 @@ This action fetchs a Status page summary, print the current service status in th
 - platform: "Supported platform"
 - fail-on-red: "Fail the action when status is red"
 
+
+## Action interface
+
+**Inputs**
+- `platform` *(required)* — Supported platform (e.g. `pantheon`)
+- `fail-on-red` *(optional)* — Indicator that fail the workflow (e.g. `true`)
+
 ## Supported platforms
 
 - cloudflare
