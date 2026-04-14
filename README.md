@@ -1,4 +1,4 @@
-# Pantheon Status Check
+# Platform Status Check
 
 This action fetchs a Status page summary, print the current service status in the workflow log, and append it to the GitHub Actions job summary.
 
