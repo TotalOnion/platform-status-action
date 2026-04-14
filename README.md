@@ -2,12 +2,6 @@
 
 This action fetchs a Status page summary, print the current service status in the workflow log, and append it to the GitHub Actions job summary.
 
-## Inputs
-
-- platform: "Supported platform"
-- fail-on-red: "Fail the action when status is red"
-
-
 ## Action interface
 
 **Inputs**
