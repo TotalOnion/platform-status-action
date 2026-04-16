@@ -36,8 +36,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check Pantheon status
-        id: pantheon_status
+      - name: Check platform status
+        id: platform_status
         uses: TotalOnion/platform-status-action@main
         with:
           platform: cloudflare
@@ -45,9 +45,9 @@ jobs:
 
       - name: Print outputs
         run: |
-          echo "Color: ${{ steps.pantheon_status.outputs.color }}"
-          echo "Indicator: ${{ steps.pantheon_status.outputs.indicator }}"
-          echo "Description: ${{ steps.pantheon_status.outputs.description }}"
+          echo "Color: ${{ steps.platform_status.outputs.color }}"
+          echo "Indicator: ${{ steps.platform_status.outputs.indicator }}"
+          echo "Description: ${{ steps.platform_status.outputs.description }}"
 
 ```
 
