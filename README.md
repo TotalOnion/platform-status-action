@@ -2,6 +2,10 @@
 
 This action retrieves a status page summary, outputs the current service status to the workflow logs, and appends it to the GitHub Actions job summary for quick and clear visibility.
 
+<img width="1878" height="560" alt="image" src="https://github.com/user-attachments/assets/2e67dce7-4b9c-448b-8ff3-7bc944ff9947" />
+
+<img width="1350" height="328" alt="image" src="https://github.com/user-attachments/assets/45de26ff-f941-4bbf-b724-2d316174e388" />
+
 ## Action interface
 
 **Inputs**
