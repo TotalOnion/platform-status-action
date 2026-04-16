@@ -1,6 +1,6 @@
 # Platform Status Check
 
-This action fetchs a Status page summary, print the current service status in the workflow log, and append it to the GitHub Actions job summary.
+This action retrieves a status page summary, outputs the current service status to the workflow logs, and appends it to the GitHub Actions job summary for quick and clear visibility.
 
 ## Action interface
 
@@ -47,7 +47,9 @@ jobs:
 
 ```
 
+## Author
 
+Maintained by [Claude B.](https://github.com/clobee) / [Total Onion](https://github.com/TotalOnion)
 
 ## License
 
